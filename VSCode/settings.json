@@ -2,64 +2,105 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[django-html]": {
+        "editor.defaultFormatter": "monosans.djlint",
+        "editor.tabSize": 2
+    },
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "[jinja-html]": {
+        "editor.defaultFormatter": "monosans.djlint"
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.console.fontSize": 16,
+    "debug.console.lineHeight": 1.5,
     "diffEditor.codeLens": true,
     "diffEditor.wordWrap": "on",
+    "djlint.enableLinting": false,
+    "editor.accessibilitySupport": "off",
     "editor.autoClosingDelete": "always",
-    "editor.codeLensFontFamily": "'Cascadia Code'",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "editor.codeLensFontFamily": "MonoLisa-Medium,OperatorMono-MediumItalic",
     "editor.cursorBlinking": "solid",
     "editor.cursorSmoothCaretAnimation": true,
     "editor.cursorSurroundingLines": 5,
+    "editor.cursorSurroundingLinesStyle": "all",
     "editor.cursorWidth": 2,
-    "editor.fontFamily": "'Cascadia Code PL'",
-    "editor.fontLigatures": "'calt', 'ss01','ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
-    "editor.fontSize": 16,
+    "editor.fontFamily": "MonoLisa-MediumItalic,Cascadia Code,OperatorMono-MediumItalic",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 18,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.guides.bracketPairs": "active",
-    "editor.inlineSuggest.enabled": true,
-    "editor.lineHeight": 2,
+    "editor.inlayHints.fontFamily": "MonoLisa",
+    "editor.inlayHints.padding": true,
     "editor.linkedEditing": true,
     "editor.mouseWheelZoom": true,
     "editor.occurrencesHighlight": false,
+    "editor.quickSuggestionsDelay": 1,
+    "editor.renderLineHighlight": "all",
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+    "editor.scrollbar.verticalScrollbarSize": 10,
     "editor.scrollBeyondLastLine": false,
     "editor.smoothScrolling": true,
-    "editor.suggest.preview": true,
+    "editor.snippetSuggestions": "bottom",
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.showStatusBar": true,
     "editor.suggestSelection": "first",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
+                "name": "log info",
+                "scope": ["log.info"],
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#99c794"
+                }
+            },
+            {
+                "name": "log error",
+                "scope": ["log.error"],
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#ec5f66"
+                }
+            },
+            {
+                "name": "log warning",
+                "scope": ["log.warning"],
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#f9ae58"
+                }
+            },
+            {
+                "name": "log debug",
+                "scope": ["log.debug"],
+                "settings": {
+                    "fontStyle": "bold",
+                    "foreground": "#6699cc"
+                }
+            },
+            {
                 "scope": [
+                    "string.quoted.other",
                     "comment",
-                    "entity.name.type.class",
-                    "keyword",
-                    "storage.modifier",
-                    "storage.type",
-                    "support.class.builtin",
-                    "keyword.control",
-                    "constant.language",
-                    "entity.other.attribute-name",
-                    "entity.name.method",
-                    "entity.name.tag",
-                    "string.quoted"
+                    "comment.block.documentation"
                 ],
                 "settings": {
                     "fontStyle": "italic"
@@ -68,118 +109,111 @@
         ]
     },
     "editor.wordWrap": "on",
+    "emmet.includeLanguages": {
+        "jinja-html": "html"
+    },
     "explorer.confirmDelete": false,
-    "explorer.experimental.fileNesting.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.closeExtensionDetailsOnViewChange": true,
     "files.associations": {
         "*.html": "html"
     },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "git.confirmSync": false,
+    "git.confirmSync": true,
+    "git.decorations.enabled": false,
     "git.untrackedChanges": "separate",
-    "github.copilot.enable": {
-        "*": false,
-        "markdown": false,
-        "plaintext": false,
-        "python": true,
-        "yaml": false
-    },
     "gitlens.advanced.messages": {
         "suppressGitMissingWarning": true
     },
+    "gitlens.statusBar.alignment": "left",
+    "html.format.indentInnerHtml": true,
+    "javascript.preferences.useAliasesForRenames": false,
+    "json.schemaDownload.enable": false,
+    "livePreview.notifyOnOpenLooseFile": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-    "prettier.singleQuote": true,
+    "logViewer.logLevel": "debug",
+    "logViewer.showStatusBarItemOnChange": true,
+    "logViewer.watch": ["logs/myapp.log"],
+    "markdown.preview.fontFamily": "MonoLisa",
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.combo.location": "off",
+    "powermode.enabled": true,
+    "powermode.explosions.gifMode": "restart",
+    "powermode.shake.enabled": false,
     "prettier.tabWidth": 4,
-    "python.formatting.provider": "black",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+    "python.diagnostics.sourceMapsEnabled": true,
+    "python.linting.flake8Args": ["--extend-ignore=N802,N803,N806,E501"],
+    "python.linting.flake8CategorySeverity.F": "Warning",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "scm.inputFontFamily": "editor",
+    "search.quickOpen.includeSymbols": true,
     "search.showLineNumbers": true,
+    "search.smartCase": true,
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.enableBell": true,
-    "terminal.integrated.enableShellIntegration": true,
+    "terminal.integrated.fontFamily": "MonoLisa",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeight": "normal",
-    "terminal.integrated.letterSpacing": 2,
-    "terminal.integrated.lineHeight": 1.2,
-    "terminal.integrated.minimumContrastRatio": 7,
+    "terminal.integrated.letterSpacing": 1,
+    "terminal.integrated.lineHeight": 1.3,
+    "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.rightClickBehavior": "paste",
+    "terminal.integrated.shellIntegration.enabled": true,
+    "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.tabs.enabled": true,
     "terminal.integrated.tabs.title": "${process} ${cwd}",
-    "thunder-client.codeSnippetLanguage": "python-requests",
+    "thunder-client.htmlView": "Raw Html",
     "thunder-client.showActivityFromCollection": true,
-    "turboConsoleLog.addSemicolonInTheEnd": true,
-    "turboConsoleLog.logMessagePrefix": "LOGGER",
-    "turboConsoleLog.wrapLogMessage": true,
     "vim.cursorStylePerMode.insert": "line",
     "vim.cursorStylePerMode.normal": "block",
     "vim.cursorStylePerMode.replace": "underline",
-    "vim.cursorStylePerMode.visual": "underline",
+    "vim.cursorStylePerMode.visual": "block-outline",
     "vim.easymotion": true,
-    "vim.enableNeovim": true,
+    "vim.foldfix": true,
     "vim.highlightedyank.enable": true,
     "vim.insertModeKeyBindings": [
         {
-            "after": [
-                "<Esc>"
-            ],
-            "before": [
-                "j",
-                "j"
-            ]
+            "after": ["<Esc>"],
+            "before": ["j", "j"]
         }
     ],
     "vim.leader": " ",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "after": [
-                "<leader>",
-                "<leader>"
-            ],
-            "before": [
-                "<leader>"
-            ]
+            "after": ["<leader>", "<leader>"],
+            "before": ["<leader>"]
         },
         {
-            "before": [
-                "."
-            ],
-            "commands": [
-                "whichkey.show"
-            ]
+            "before": ["'"],
+            "commands": ["whichkey.show"]
         },
         {
-            "after": [
-                "O",
-                "<Esc>",
-                "j",
-                "w"
-            ],
-            "before": [
-                "<Enter>"
-            ]
+            "after": ["O", "<Esc>", "j", "w"],
+            "before": ["<Enter>"]
         }
     ],
     "vim.overrideCopy": false,
     "vim.showMarksInGutter": true,
-    "vim.smartRelativeLine": true,
     "vim.sneak": true,
     "vim.sneakReplacesF": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.targets.enable": true,
     "vim.useSystemClipboard": true,
     "vim.visualModeKeyBindingsNonRecursive": [
         {
-            "before": [
-                ","
-            ],
-            "commands": [
-                "whichkey.show"
-            ]
+            "before": [","],
+            "commands": ["whichkey.show"]
         }
     ],
     "vim.visualstar": true,
+    "vsicons.dontShowNewVersionMessage": true,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "whichkey.bindings": [
         {
@@ -990,9 +1024,9 @@
                     "type": "command"
                 },
                 {
-                    "command": "workbench.action.selectTheme",
+                    "command": "workbench.action.toggleAuxiliaryBar",
                     "key": "s",
-                    "name": "Select theme",
+                    "name": "Toggle Side Panel",
                     "type": "command"
                 },
                 {
@@ -1130,24 +1164,45 @@
         }
     ],
     "window.autoDetectColorScheme": true,
-    "window.nativeFullScreen": false,
-    "workbench.colorTheme": "GitHub Light",
-    "workbench.editor.enablePreview": false,
+    "window.dialogStyle": "custom",
+    "window.openFilesInNewWindow": "on",
+    "window.openWithoutArgumentsInNewWindow": "on",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+    "window.titleSeparator": "  --- ",
+    "workbench.colorCustomizations": {
+        "[Mariana]": {
+            "editor.background": "#29333d",
+            "editor.lineHighlightBackground": "#ffffff19",
+            "editorLineNumber.activeForeground": "#ffffff",
+            "editorLineNumber.foreground": "#ffffff30"
+        }
+    },
+    "workbench.colorTheme": "Mariana",
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.tabCloseButton": "left",
+    "workbench.editor.tabSizing": "shrink",
     "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.wrapTabs": true,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb",
-        "*.jpeg": "luna.editor"
+        "*.jpg": "imagePreview.previewEditor"
     },
-    "workbench.experimental.layoutControl.enabled": true,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.fontAliasing": "auto",
     "workbench.list.smoothScrolling": true,
-    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+    "workbench.preferredDarkColorTheme": "Mariana",
     "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
-    "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.preferredLightColorTheme": "Gatito Theme",
     "workbench.productIconTheme": "fluent-icons",
     "workbench.startupEditor": "newUntitledFile",
-    "zenMode.hideStatusBar": false
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "onHover",
+    "zenMode.hideLineNumbers": false,
+    "leetcode.workspaceFolder": "/Users/gijomathew/.leetcode",
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.hint.commandShortcut": false,
+    "workbench.preferredHighContrastLightColorTheme": "GitHub Dark High Contrast",
+    "python.formatting.provider": "yapf",
+    "window.zoomLevel": -1,
+    "editor.lineHeight": 1.7
 }
