@@ -284,11 +284,6 @@
         "command": "execPaste"
     },
     {
-        "key": "cmd+l",
-        "command": "expandLineSelection",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+o",
         "command": "lineBreakInsert",
         "when": "textInputFocus && !editorReadonly"
@@ -2619,10 +2614,6 @@
     },
     {
         "key": "shift+cmd+s",
-        "command": "workbench.action.files.saveAs"
-    },
-    {
-        "key": "shift+cmd+s",
         "command": "workbench.action.files.saveLocalFile",
         "when": "remoteFileDialogVisible"
     },
@@ -3821,18 +3812,13 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "shift+cmd+l",
-        "command": "extension.log",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "alt+cmd+o",
         "command": "extension.open"
     },
     {
-        "key": "shift+cmd+l",
+        "key": "ctrl+l",
         "command": "extension.print",
-        "when": "editorTextFocus"
+        "when": "editorLangId ==python"
     },
     {
         "key": "escape",
@@ -3860,8 +3846,9 @@
         "when": "editorLangId =~ /(sql|sqlite)/"
     },
     {
-        "key": "ctrl+alt+l",
-        "command": "turboConsoleLog.displayLogMessage"
+        "key": "ctrl+l",
+        "command": "turboConsoleLog.displayLogMessage",
+        "when": "editorLangId != python"
     },
     {
         "key": "shift+cmd+r",
@@ -4571,11 +4558,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "cmd+l",
-        "command": "extension.log",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "shift+cmd+l",
         "command": "-extension.log",
         "when": "editorTextFocus"
@@ -4750,11 +4732,6 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "shift+k",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus && vim.mode != 'insert'"
-    },
-    {
         "key": "ctrl+k ctrl+i",
         "command": "-editor.action.showHover",
         "when": "editorTextFocus"
@@ -4809,5 +4786,13 @@
         "key": "enter",
         "command": "-pythonIndent.newlineAndIndent",
         "when": "editorTextFocus && !editorHasMultipleSelections && !suggestWidgetVisible && editorLangId == 'python' && neovim.mode == 'insert'"
+    },
+    {
+        "key": "shift+cmd+s",
+        "command": "workbench.profiles.actions.switchProfile"
+    },
+    {
+        "key": "shift+cmd+s",
+        "command": "-workbench.action.files.saveAs"
     }
 ]
