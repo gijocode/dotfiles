@@ -10,10 +10,10 @@ set wildmenu
 set hidden
 set number
 set cursorline
-set spell
 set ignorecase
 set smartcase
 set foldmethod=indent
+set nofoldenable
 call plug#begin('~/vimplugins')
 
 Plug 'prabirshrestha/vim-lsp'
